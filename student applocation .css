@@ -1,0 +1,104 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9eedf4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #efbcc2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    color: #1b14f2;
+}
+
+/* Fieldset styles */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4b5a42;
+    background-color: #a5aadf;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Radio and checkbox styles */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    background-color: #e10e39;
+}
+
+/* Select field styles */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #36555c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+input[type="submit"] {
+    background-color: #0b0ec0;
+    color: #a27777;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* File input styles */
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+/* Add some spacing between elements */
+p {
+    margin: 10px 0;
+}
+
+/* Additional Styles to enhance the appearance */
+
+/* Center the form on larger screens */
+@media (min-width: 768px) {
+    form {
+        margin-top: 50px;
+    }
+}
+
+/* Apply some padding around the form on larger screens */
+@media (min-width: 992px) {
+    form {
+        padding: 30px;
+    }
+}

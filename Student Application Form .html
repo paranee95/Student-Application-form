@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application</title>
+    <link rel="stylesheet" href="student applocation .css">
+</head>
+<body>
+
+    <h1 align="center">  Application Form </h1>
+
+    <form id="form" action="" method="post" enctype="multipart/form-data" onsubmit=" return showSuccessMessage();">
+        <fieldset>
+            <legend> Login Details </legend>
+            <p>
+                <label for="username"> STUDENT NAME : </label> <br>
+                <input type="text" name="username" id="username">
+            </p>
+    
+            <p>
+                <label for="email"> EMAIL ID :</label> <br>
+                <input type="email" name="email" id="email">
+            </p>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend> Contact Details </legend>
+            
+            <label for="address"> ADDRESS : </label> <br>
+            <textarea name="address" id="address" rows="5" cols="15"></textarea>
+        
+            <p>
+                <label for="">GENDER : </label> <br>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">MALE</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">FEMALE</label>
+            </p>
+
+            <p>
+                <label for="">MARITAL STATUS : </label> <br>
+                <input type="radio" name="maritalstatus" value="single" id="single">
+                <label for="single">single</label>
+                <input type="radio" name="maritalstatus" value="married" id="married">
+                <label for="married">married</label>
+                <input type="radio" name="maritalstatus" value="widowed" id="widowed">
+                <label for="widowed">widowed</label>
+                <input type="radio" name="maritalstatus" value="divorced" id="divorced">
+                <label for="divorced">divorced</label>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend> Course Details </legend>
+
+            <p>
+                <label for="courses"> COURSES :</label> <br>
+                <input type="checkbox" name="web" id="web">
+                <label for="web">Data Science</label>
+                <input type="checkbox" name="hardware" id="hardware">
+                <label for="hardware"> Software Engineering</label>
+                <input type="checkbox" name="network" id="network">
+                <label for="network">  Object oriented Design</label>
+                <input type="checkbox" name="software" id="software">
+                <label for="software"> Applied statistics</label>
+                <input type="checkbox" name="graphic" id="graphic">
+                <label for="graphic"> UX Designing</label>
+                <input type="checkbox" name="Application" id="Application">
+                <label for="Application"> Web Development</label>
+            </p>
+
+            <p>
+                <select name="hobbies" id="hobbies" size="4">
+                    <option value="dancing">Singing</option>
+                    <option value="dancing">Dancing</option>
+                    <option value="cricket">Net ball</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="volleyball">Volleyball</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="certificates">Upload your certificates:</label> <br>
+                <input type="file" name="certificates" id="certificates">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="click to submit" name="submit">
+        </p>
+        
+    </form>
+    <!-- JavaScript code to show the success message -->
+    <script>
+        function showSuccessMessage() {
+            // Prevent form submission to see the message in this example
+            event.preventDefault();
+
+            // Get the form element
+            const form = document.getElementById('form');
+
+            // Hide the form after submission
+            form.style.display = 'none';
+
+            // Create a success message element
+            const successMessage = document.createElement('p');
+            successMessage.textContent = 'Form submitted successfully! Thank you for your application.';
+            successMessage.style.color = 'green';
+            successMessage.style.textAlign = 'center';
+
+            // Append the success message to the body
+            document.body.appendChild(successMessage);
+
+            // You can redirect to another page after showing the success message using:
+            // window.location.href = "success.html";
+
+            // Return false to prevent the form from submitting (in this example, we're not actually submitting it)
+            return false;
+        }
+    </script>
+</body>
+</html>
